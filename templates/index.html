@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <h1> Welcome to Github Dashboard for {{ org }} </h1>
+    </head>
+   <body>
+      <table border = 1>
+          <tr>
+           <th>Repo Name</th>
+           <th>Fork Count</th>
+         </tr>
+          {% for key, value in result %}
+            <tr>
+               <th> {{ key }} </th>
+               <td> {{ value }} </td>
+            </tr>
+         {% endfor %}
+      </table>
+    <br/>
+       <table border = 1>
+           <tr>
+               <th>Repo Name</th>
+               <th>Star Count</th>
+           </tr>
+             {% for key, value in result2 %}
+                <tr>
+                   <th> {{ key }} </th>
+                   <td> {{ value }} </td>
+                </tr>
+             {% endfor %}
+          </table>
+   </body>
+</html>
+
+
+
+
